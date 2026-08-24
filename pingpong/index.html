@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ping Pong — A Arte da Velocidade</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-ball"></span>
+            PING<span>PONG</span>
+        </a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">O esporte</a>
+            <a href="#regras">Regras</a>
+            <a href="#tecnicas">Técnicas</a>
+        </nav>
+
+        <button class="nav-button" onclick="scrollToSection('sobre')">
+            Explorar
+            <span>→</span>
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <div class="tag">
+                    <span></span>
+                    VELOCIDADE • PRECISÃO • ESTRATÉGIA
+                </div>
+
+                <h1>
+                    O esporte onde
+                    <strong>milissegundos</strong>
+                    fazem a diferença.
+                </h1>
+
+                <p>
+                    Descubra o mundo do ping pong, um esporte que combina
+                    reflexos rápidos, técnica, estratégia e uma velocidade
+                    impressionante.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-button" onclick="scrollToSection('sobre')">
+                        Conheça o esporte
+                        <span>↗</span>
+                    </button>
+
+                    <button class="secondary-button" onclick="showFact()">
+                        Curiosidade
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="table">
+                    <div class="table-surface">
+                        <div class="table-line"></div>
+                        <div class="table-net"></div>
+                    </div>
+
+                    <div class="table-leg left"></div>
+                    <div class="table-leg right"></div>
+                </div>
+
+                <div class="ping-ball"></div>
+
+                <div class="speed-line line-one"></div>
+                <div class="speed-line line-two"></div>
+                <div class="speed-line line-three"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats">
+
+            <div class="stat">
+                <strong class="counter" data-target="120">0</strong>
+                <span>km/h</span>
+                <p>Velocidade que a bola pode atingir</p>
+            </div>
+
+            <div class="stat">
+                <strong class="counter" data-target="2.74">0</strong>
+                <span>m</span>
+                <p>Comprimento oficial da mesa</p>
+            </div>
+
+            <div class="stat">
+                <strong class="counter" data-target="40">0</strong>
+                <span>mm</span>
+                <p>Diâmetro da bola oficial</p>
+            </div>
+
+            <div class="stat">
+                <strong class="counter" data-target="11">0</strong>
+                <span>pts</span>
+                <p>Pontos necessários para vencer um game</p>
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="section about" id="sobre">
+
+            <div class="section-heading">
+
+                <div class="section-number">01</div>
+
+                <div>
+                    <span class="eyebrow">O ESPORTE</span>
+
+                    <h2>
+                        Muito mais do que
+                        <em>bater na bola.</em>
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p class="large-text">
+                        O ping pong, também conhecido como tênis de mesa,
+                        é um esporte praticado entre dois jogadores ou
+                        duas duplas.
+                    </p>
+
+                    <p>
+                        O objetivo é simples: acertar a bola sobre a mesa
+                        de maneira que o adversário não consiga devolvê-la
+                        corretamente. Apesar da simplicidade da ideia,
+                        o esporte exige enorme controle, velocidade de
+                        reação e capacidade de antecipação.
+                    </p>
+
+                    <p>
+                        Cada golpe pode alterar completamente o ponto.
+                        Efeitos, velocidade, posicionamento e leitura do
+                        adversário transformam cada troca de bola em uma
+                        pequena disputa estratégica.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <div class="card-top">
+                        <span>01</span>
+                        <span>TABLE TENNIS</span>
+                    </div>
+
+                    <div class="racket">
+                        <div class="racket-handle"></div>
+                        <div class="racket-head"></div>
+                    </div>
+
+                    <div class="card-bottom">
+                        <strong>PRECISÃO</strong>
+                        <p>Cada movimento importa.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REGRAS -->
+        <section class="section rules" id="regras">
+
+            <div class="section-heading centered">
+
+                <div class="section-number">02</div>
+
+                <div>
+                    <span class="eyebrow">COMO FUNCIONA</span>
+
+                    <h2>
+                        Regras que definem
+                        <em>o jogo.</em>
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="rules-grid">
+
+                <article class="rule-card">
+                    <span class="rule-number">01</span>
+                    <h3>O saque</h3>
+                    <p>
+                        O saque inicia o ponto. A bola deve ser lançada
+                        para cima e acertada de forma que quique primeiro
+                        no lado de quem sacou e depois no lado adversário.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number">02</span>
+                    <h3>A pontuação</h3>
+                    <p>
+                        Um game normalmente termina quando um jogador
+                        alcança 11 pontos, desde que tenha pelo menos
+                        dois pontos de vantagem.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number">03</span>
+                    <h3>A troca</h3>
+                    <p>
+                        Após o saque, os jogadores precisam devolver
+                        a bola fazendo com que ela quique no lado
+                        adversário da mesa.
+                    </p>
+                </article>
+
+                <article class="rule-card">
+                    <span class="rule-number">04</span>
+                    <h3>A vitória</h3>
+                    <p>
+                        Em competições, uma partida é disputada em
+                        uma série de games. Vence quem conquistar
+                        a quantidade necessária de games primeiro.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TÉCNICAS -->
+        <section class="section techniques" id="tecnicas">
+
+            <div class="section-heading">
+
+                <div class="section-number">03</div>
+
+                <div>
+                    <span class="eyebrow">TÉCNICA</span>
+
+                    <h2>
+                        Domine os
+                        <em>movimentos.</em>
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="technique-list">
+
+                <div class="technique active" onclick="selectTechnique(this)">
+                    <div class="technique-index">01</div>
+
+                    <div class="technique-info">
+                        <h3>Forehand</h3>
+                        <p>
+                            Um dos golpes mais utilizados no tênis de mesa,
+                            executado pelo lado dominante do jogador.
+                        </p>
+                    </div>
+
+                    <span class="technique-arrow">↗</span>
+                </div>
+
+
+                <div class="technique" onclick="selectTechnique(this)">
+                    <div class="technique-index">02</div>
+
+                    <div class="technique-info">
+                        <h3>Backhand</h3>
+                        <p>
+                            Golpe realizado pelo lado oposto ao forehand,
+                            permitindo respostas rápidas e compactas.
+                        </p>
+                    </div>
+
+                    <span class="technique-arrow">↗</span>
+                </div>
+
+
+                <div class="technique" onclick="selectTechnique(this)">
+                    <div class="technique-index">03</div>
+
+                    <div class="technique-info">
+                        <h3>Topspin</h3>
+                        <p>
+                            Golpe que gera rotação para frente na bola,
+                            aumentando o controle e alterando sua trajetória.
+                        </p>
+                    </div>
+
+                    <span class="technique-arrow">↗</span>
+                </div>
+
+
+                <div class="technique" onclick="selectTechnique(this)">
+                    <div class="technique-index">04</div>
+
+                    <div class="technique-info">
+                        <h3>Smash</h3>
+                        <p>
+                            Uma finalização extremamente rápida usada
+                            para atacar bolas favoráveis.
+                        </p>
+                    </div>
+
+                    <span class="technique-arrow">↗</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta">
+
+            <div class="cta-ball"></div>
+
+            <span class="eyebrow">PING PONG</span>
+
+            <h2>
+                Velocidade é apenas
+                <span>o começo.</span>
+            </h2>
+
+            <p>
+                Técnica, estratégia e precisão transformam cada ponto
+                em uma disputa completamente diferente.
+            </p>
+
+            <button class="primary-button" onclick="scrollToSection('inicio')">
+                Voltar ao início
+                <span>↑</span>
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            PING<span>PONG</span>
+        </div>
+
+        <p>
+            Uma introdução ao universo do tênis de mesa.
+        </p>
+
+        <span class="copyright">
+            © 2026 — Projeto educacional
+        </span>
+
+    </footer>
+
+
+    <div class="fact-popup" id="factPopup">
+        <div class="fact-box">
+            <button onclick="closeFact()">×</button>
+
+            <span class="eyebrow">VOCÊ SABIA?</span>
+
+            <h3>
+                A bola pode atingir velocidades
+                impressionantes durante uma partida.
+            </h3>
+
+            <p>
+                Além da velocidade, o efeito aplicado pelo jogador
+                pode mudar drasticamente a trajetória da bola.
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
